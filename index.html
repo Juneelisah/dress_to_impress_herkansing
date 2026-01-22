@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click to Dress</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="myAudio" src="snd/music.mp3" preload="auto"></audio>
+
+    <div id="startScreen">
+      <h1>Click to Dress</h1>
+      <button id="startButton">Start</button>
+    </div>
+
+    <main id="gameContent" class="hidden">
+      <div class="game-container">
+        <div class="character-display">
+          <img src="images/base.png" id="base" alt="Base Character" />
+          <img src="images/blank.png" id="pants" class="clothing" alt="Pants" />
+          <img src="images/blank.png" id="shirt" class="clothing" alt="Shirt" />
+        </div>
+
+        <div class="controls-bar">
+          <div class="clothing-category">
+            <span>Pants:</span>
+            <button id="pants1Button">Pants 1</button>
+            <button id="pants2Button">Pants 2</button>
+            <button id="noPantsButton">No pants</button>
+          </div>
+          <div class="clothing-category">
+            <span>Shirts:</span>
+            <button id="shirt1Button">Shirt 1</button>
+            <button id="shirt2Button">Shirt 2</button>
+            <button id="noShirtButton">No Shirt</button>
+          </div>
+        </div>
+        
+    </main>
+
+    <script src="dress.js"></script>
+  </body>
+</html>
